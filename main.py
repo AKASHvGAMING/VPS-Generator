@@ -10,9 +10,9 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Constants
 SERVER_LIMIT = 5 
-AUTHORIZED_ROLE_IDS = [000000000000000000, 000000000000000000]
+AUTHORIZED_ROLE_IDS = [1290252659198132234, 1290253010316034088]
 database_file = "servers.txt"
-TOKEN = "YOUR_TOKEN"
+TOKEN = "MTI5ODI2NTMxNjg5NTM2MzIwNQ.GSWnwL.IQl6NisrIlAx98Fn_KSv2Wwqmx9gAHSvnvjFTE"
 
 # Helper functions
 def count_user_servers(user):
@@ -214,8 +214,8 @@ async def list_servers(ctx):
 async def on_ready():
     """Set bot status."""
     await bot.change_presence(
-        status=discord.Status.dnd,
-        activity=discord.Game(name="with VPS v4")
+        status=discord.Status.online,
+        activity=discord.Game(name="!!AKASHvGAMING!!")
     )
     print(f"Logged in as {bot.user}")
 bot.run(TOKEN)
